@@ -2268,71 +2268,44 @@ body .panel p {
 }
 @media (max-width: 420px) {
   .planet {
-    width: 260px !important;
-    height: 260px !important;
-    bottom: -140px !important;
-    background-size: contain !important;
+    transform: scale(0.25);
+    transform-origin: center bottom;
+  }
+
+  .trajectory {
+    transform: scale(0.2);
+    transform-origin: center center;
   }
 
   .moon {
-    width: 60px !important;
-    height: 60px !important;
-    top: -80px !important;
-  }
-
-  .planet .moon h2 {
-    font-size: 16px !important;
-    top: -50px !important;
-  }
-
-  .planet .moon h3 {
-    font-size: 10px !important;
-    top: -50px !important;
-  }
-
-  .logo {
-    font-size: 10px !important;
-    top: 8px !important;
-    line-height: 1.2;
-  }
-
-  .logo span {
-    font-size: 9px !important;
+    transform: scale(0.4);
+    transform-origin: center;
   }
 
   label.menu {
+    transform: scale(0.7);
+    transform-origin: top left;
     left: 5px !important;
-    transform: scale(0.75);
   }
 
   label.menu .preview {
-    width: 18px !important;
-    height: 18px !important;
+    width: auto !important;
+    height: auto !important;
   }
 
   label.menu h2,
   label.menu h3 {
-    font-size: 7px !important;
+    font-size: 10px !important;
     letter-spacing: 0.5px !important;
   }
 
   .planet_description {
-    font-size: 11px !important;
-    padding: 8px !important;
+    font-size: 10px !important;
+    padding: 6px !important;
   }
 
   input[type="radio"][name="planet"]::after {
-    width: 60px !important;
-    height: 60px !important;
-  }
-
-  .trajectory {
-    width: 280px !important;
-    height: 280px !important;
-    border-width: 1px !important;
-    border-radius: 50% !important;
-    left: 50% !important;
-    top: 50% !important;
-    transform: translate(-50%, -50%) scale(0.7) !important;
+    transform: scale(0.6);
+    transform-origin: center;
   }
 }
