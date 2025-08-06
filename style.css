@@ -280,7 +280,12 @@ body label.menu:nth-of-type(9) {
   top: calc(50vh + 100px + ((14px + 34px) * 9) + 0px - 369px);
 }
 body input.read {
-  display: none;
+  opacity: 0;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  pointer-events: none;
+  z-index: -1;
 }
 body .read:checked + label + input + .panel {
   right: 0;
